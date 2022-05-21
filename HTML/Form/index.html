@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body style="background-color:rgb(23, 189, 235);">
+    <h1>Registration Form:</h1>
+    <hr>
+    <br>
+    
+    <form action="/action_page.php" method="get">
+        <label>1.Enter Name:</label>&nbsp;&nbsp;&nbsp;
+        <input name="name" type="text" placeholder="Write your name"><br><br>
+        <label>2.Email Adress <label style="color:red;">*</label>:</label>&nbsp;&nbsp;
+        <input name="email" type="email" placeholder="Enter your email" required><br><br>
+        <label>3.Password:</label>&nbsp;&nbsp;
+        <input type="password" name="password" placeholder="Enter your password" required><br><br>
+        <label>4.Gender:</label>&nbsp;&nbsp;
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="Female" required>Female
+        <input type="radio" name="gender" value="other" required>Other
+        <br><br>
+        <label>5.Select Language:</label>&nbsp;&nbsp;
+        <select name="Language" id="">Select Language
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+        </select><br><br>
+        <label for="zip">Zip Code:</label>&nbsp;&nbsp;
+        <input type="text" name="zip" id="zip" maxlength="6" size="6">
+        <br><br>
+        <label>7.Upload File:</label>&nbsp;&nbsp;
+        <input type="file" name="upload"><br><br>
+        <input type="checkbox" name="agree" required>
+        <label>Agree terms and conditions.</label><br><br>     
+
+
+        
+        
+        <input type="submit"  value="submit">
+    </form>
+    
+</body>
+</html>
